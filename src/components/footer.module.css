@@ -1,0 +1,33 @@
+.containerFooter {
+  width: 100%;
+  max-width: inherit;
+  position: fixed;
+  height: 3rem;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(/fondo.jpg);
+  background-position: bottom;
+  padding: 5px 0px 5px;
+}
+.inputText {
+  flex-grow: 4;
+  height: 80%;
+  background-color: #fff;
+  border-radius: 3rem;
+  margin: 0 5px;
+}
+.microphone {
+  height: 100%;
+  aspect-ratio: 1/1;
+  background-color: #00897b;
+  border-radius: 50%;
+  margin-right: 5px;
+  display: grid;
+  place-content: center;
+}
+.microphone svg {
+  fill: #fff;
+  transform: scale(0.7);
+}

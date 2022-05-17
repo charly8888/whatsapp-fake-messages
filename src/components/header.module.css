@@ -1,0 +1,24 @@
+.containerHeader {
+  height: 3.5rem;
+  background-color: #075e55;
+  display: flex;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  align-items: center;
+  color: #fff;
+  max-width: inherit;
+  gap: 1rem;
+}
+.imageGroup {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: blueviolet;
+  border-radius: 50%;
+}
+.headingContainer {
+  flex-grow: 4;
+  overflow: hidden;
+  background-color: cornflowerblue;
+  max-height: 82%;
+}

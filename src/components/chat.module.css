@@ -1,0 +1,83 @@
+.chatContainer {
+  width: 75%;
+  padding: 0px 5px 5px 5px;
+  background-color: #fff;
+  position: relative;
+  margin: 1rem;
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.chatNotAmi::before {
+  position: absolute;
+  content: '';
+  background-color: inherit;
+  width: 15px;
+  height: 5px;
+  left: -10px;
+  border-radius: 5px;
+  top: 0px;
+}
+.chatNotAmi::after {
+  position: absolute;
+  content: '';
+  background-color: inherit;
+  width: 20px;
+  height: 5px;
+  left: -10px;
+  border-radius: 5px;
+  top: -2px;
+  transform-origin: 0%;
+  transform: rotate(45deg);
+}
+
+.containerAmI {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.chatAmi {
+  background-color: #daf6c5;
+  border-radius: 0.5rem 0 0.5rem 0.5rem;
+  position: relative;
+  margin: 0 1rem;
+}
+.chatAmi::before {
+  position: absolute;
+  content: '';
+  background-color: inherit;
+  width: 15px;
+  height: 5px;
+  right: -10px;
+  border-radius: 5px;
+  top: 0px;
+}
+.chatAmi::after {
+  position: absolute;
+  content: '';
+  background-color: inherit;
+  width: 20px;
+  height: 5px;
+  right: -10px;
+  border-radius: 5px;
+  top: -2px;
+  transform-origin: 100%;
+  transform: rotate(-45deg);
+}
+
+.name {
+  color: blue;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.puntoParaTapar {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  background-color: inherit;
+  right: -5px;
+  top: 2px;
+}
+.puntoParaTaparRight{
+  left: -5px;
+}
