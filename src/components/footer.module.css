@@ -17,6 +17,15 @@
   background-color: #fff;
   border-radius: 3rem;
   margin: 0 5px;
+  display: flex;
+  align-items: center;
+}
+.inputText svg {
+  fill: #bbb;
+  margin: 0.5rem;
+}
+.inputText svg:nth-child(3) {
+  transform: rotate(-45deg);
 }
 .microphone {
   height: 100%;
@@ -29,5 +38,9 @@
 }
 .microphone svg {
   fill: #fff;
-  transform: scale(0.7);
+  transform: scale(0.6);
+}
+.placeholder {
+  color: #bbb;
+  flex-grow: 1;
 }
