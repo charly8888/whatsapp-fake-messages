@@ -14,7 +14,7 @@ const Header = ({ estaEscribiendo }) => {
         {estaEscribiendo ? (
           <p>{estaEscribiendo} está escribiendo</p>
         ) : (
-          <p>Eze, </p>
+          <p>Eze, Mari, Juanito </p>
         )}
       </section>
       <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">

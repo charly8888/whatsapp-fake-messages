@@ -4,6 +4,7 @@ import Chat from './Chat'
 import css from './containerChat.module.css'
 import Footer from './Footer'
 import Header from './Header'
+import ImageChat from './ImageChat'
 
 const ContainerChat = () => {
   const [indexArr, setindexArr] = useState(0)
@@ -34,6 +35,9 @@ const ContainerChat = () => {
       <main className={css.container}>
         <div className={css.app}>
           {componentes?.map((e) => {
+            if (e.type === 'image') {
+              return <ImageChat key={e.id} {...e} />
+            }
             return <Chat key={e.id} {...e} />
           })}
         </div>

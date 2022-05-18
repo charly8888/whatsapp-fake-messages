@@ -32,7 +32,7 @@ const datos = [
   },
   {
     id: 4,
-    name: 'Mati',
+    name: 'Mati ',
     message:
       'me vas a matar pero ayer me avisaron que es obligatorio que vayan los 2 padres a la presentacion que hace el jardín de Caro',
     time: 3000,
@@ -59,9 +59,9 @@ const datos = [
     message: '',
     time: 2500,
     AmI: false,
-    type: 'sticker',
+    type: 'image',
     timeMessage: '12:44 pm',
-
+    src: '/alberto-fernandezjpg.webp',
     color: '#A333FF',
   },
   {
