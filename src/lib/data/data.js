@@ -3,7 +3,7 @@ const datos = [
     id: 1,
     name: 'Juanito Pérez',
     message: 'Hola, Mati no te olvidez de traer la gaseosa para esta noche',
-    time: 0,
+    time: 3000,
     AmI: true,
     type: 'text',
     timeMessage: '12:02 pm',
