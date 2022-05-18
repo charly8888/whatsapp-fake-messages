@@ -25,5 +25,12 @@
 .headingContainer {
   flex: 1;
   overflow: hidden;
-  max-height: 82%;
+  height: 84%;
+}
+.headingContainer p::after {
+  content: " ...";
+}
+.headingContainer p {
+  color: lavender;
+  display: inline-block;
 }

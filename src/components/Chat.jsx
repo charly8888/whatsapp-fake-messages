@@ -1,14 +1,16 @@
 import css from './chat.module.css'
 
-const Chat = ({ name, message, AmI, timeMessage }) => {
-  console.log(AmI)
+const Chat = ({ name, message, AmI, timeMessage, color }) => {
+  console.log(color)
 
   if (AmI) {
     return (
       <>
         <div className={css.containerAmI}>
           <div className={`${css.chatContainer}  ${css.chatAmi}`}>
-            <p className={css.name}>{name}</p>
+            <p className={css.name} style={{ color: `${color}` }}>
+              {name}
+            </p>
             <p>{message}</p>
             <h5>{timeMessage}</h5>
             <span className={css.puntoParaTapar}></span>
@@ -19,7 +21,9 @@ const Chat = ({ name, message, AmI, timeMessage }) => {
   }
   return (
     <div className={`${css.chatContainer}  ${css.chatNotAmi}`}>
-      <p className={css.name}>{name}</p>
+      <p className={css.name} style={{ color: `${color}` }}>
+        {name}
+      </p>
       <p>{message}</p>
       <h5>{timeMessage}</h5>
       <span
