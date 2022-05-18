@@ -12,7 +12,9 @@ const ContainerChat = () => {
 
   useEffect(() => {
     if (indexArr === datos.length) return
-    setEstaEscribiendo(true)
+    const timeOutEstaEscribiendo = setTimeout(() => {
+      setEstaEscribiendo(datos[indexArr].name)
+    }, 1000)
     const time = setTimeout(() => {
       setComponentes([...componentes, datos[indexArr]])
       setindexArr(() => indexArr + 1)
@@ -22,6 +24,7 @@ const ContainerChat = () => {
 
     return () => {
       clearTimeout(time)
+      clearTimeout(timeOutEstaEscribiendo)
     }
   }, [indexArr])
 

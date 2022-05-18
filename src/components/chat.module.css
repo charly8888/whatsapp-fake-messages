@@ -6,7 +6,12 @@
   margin: 1rem;
   border-radius: 0 0.5rem 0.5rem 0.5rem;
 }
-
+.chatContainer h5 {
+  text-align: right;
+  /* margin-right: 1rem; */
+  color: gray;
+  font-weight: 400;
+}
 .chatNotAmi::before {
   position: absolute;
   content: '';
@@ -78,6 +83,6 @@
   right: -5px;
   top: 2px;
 }
-.puntoParaTaparRight{
+.puntoParaTaparRight {
   left: -5px;
 }
