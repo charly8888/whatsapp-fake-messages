@@ -1,7 +1,7 @@
 const datos = [
   {
     id: 1,
-    name: 'Lucre',
+    name: '',
     message:
       'Hola grupo!! no se olviden que hoy tenemos reunión con cena a la canasta!',
     time: 10000,

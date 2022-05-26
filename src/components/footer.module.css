@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: url(/fondo.jpg);
+  background-image: url(/fondo.png);
   background-position: bottom;
   padding: 5px 0px 5px;
 }
