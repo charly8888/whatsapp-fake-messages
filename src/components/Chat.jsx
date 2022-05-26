@@ -1,7 +1,7 @@
 import css from './chat.module.css'
 
 const Chat = ({ name, message, AmI, timeMessage, color }) => {
-  console.log(color)
+  // console.log(color)
 
   if (AmI) {
     return (

@@ -10,12 +10,16 @@ const ContainerChat = () => {
   const [indexArr, setindexArr] = useState(0)
   const [estaEscribiendo, setEstaEscribiendo] = useState(false)
   const [componentes, setComponentes] = useState([])
-
+  console.log('inicio render')
   useEffect(() => {
+    document.getElementById('containerChat').scrollTop =
+      document.getElementById('containerChat').scrollHeight
     if (indexArr === datos.length) return
+    console.log('render de useEfect')
     const timeOutEstaEscribiendo = setTimeout(() => {
       setEstaEscribiendo(datos[indexArr].name)
     }, 1000)
+
     const time = setTimeout(() => {
       setComponentes([...componentes, datos[indexArr]])
       setindexArr(() => indexArr + 1)
@@ -23,16 +27,17 @@ const ContainerChat = () => {
       setEstaEscribiendo(false)
     }, datos[indexArr].time)
 
+    console.log('hola')
     return () => {
+      console.log('return')
       clearTimeout(time)
       clearTimeout(timeOutEstaEscribiendo)
     }
   }, [indexArr])
 
-  console.log(componentes)
   return (
     <>
-      <main className={css.container}>
+      <main className={css.container} id="containerChat">
         <div className={css.app}>
           {componentes?.map((e) => {
             if (e.type === 'image') {

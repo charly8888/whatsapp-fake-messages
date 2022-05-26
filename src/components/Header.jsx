@@ -8,13 +8,14 @@ const Header = ({ estaEscribiendo }) => {
           d="m12 4 1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z"
         ></path>
       </svg>
-      <div className={css.imageGroup}></div>
+      <div className={css.imageGroup}>
+      </div>
       <section className={css.headingContainer}>
-        <h2>Grupo ABC</h2>
+        <h2>Jovenes </h2>
         {estaEscribiendo ? (
           <p>{estaEscribiendo} está escribiendo</p>
         ) : (
-          <p>Eze, Mari, Juanito </p>
+          <p>Anita, German, Giane </p>
         )}
       </section>
       <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
